@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> AC app by Shruti Jagtap </title>
+		<style>
+			*{font-size:50px; font-family:Comic Sans;}
+			body{background-color:indianred;}
+			h1{background-color:lightgreen; color:ghostwhite; width:55%; border-radius:40px}
+
+		</style>
+	</head>
+	<body>
+	<center>
+		<br/>
+		<h1> Area Circumference Finder </h1>
+		<form method="POST">
+			{%   csrf_token   %}
+			<input type="number" step="any" placeholder="Enter the radius" name="radius" min=0.1 required/>
+			<bt/><br/>
+			<input type="submit" value="Find"/>
+			<br/>
+
+
+		</form>
+		{{ msg }}
+	</center>
+	</body>
+
+</html>
